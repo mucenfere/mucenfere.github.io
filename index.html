@@ -12,7 +12,7 @@
     .desc{ color:#444; line-height:1.5; }
     .grid{
       display:grid;
-      grid-template-columns: repeat(auto-fit, 450px);
+      grid-template-columns: 450px 450px;
       gap:14px;
       padding:16px;
       justify-content: center;
@@ -25,7 +25,7 @@
       min-height: 400px;
     }
     .thumb{
-      height:240px;
+      height:320px;
       background:#f3f3f3;
       background-size: cover;
       background-position: center;
@@ -35,7 +35,7 @@
       padding:12px;
       display:flex;
       flex-direction: column;
-      height: calc(400px - 240px);
+      height: calc(400px - 320px);
     }
     .title{ font-weight:800; margin:0 0 6px; }
     .meta{ margin:0 0 10px; color:#555; font-size:13px; line-height:1.4; }
@@ -43,6 +43,12 @@
     a.btn{ display:inline-block; padding:8px 10px; border-radius:10px; border:1px solid #bbb; text-decoration:none; color:#111; font-weight:600; font-size:13px; }
     a.btn.primary{ background:#111; color:#fff; border-color:#111; }
     footer{ padding:18px 16px; color:#666; font-size:12px; border-top:1px solid #eee; }
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: 450px; }
+    }
+    @media (max-width: 480px){
+      .grid{ grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -79,6 +85,18 @@
            </div>
          </div>
       </article>
+            <article class="card">
+        <div class="thumb" data-thumb="./img/mukden_hunting_grounds_thumb.jpg"></div>
+        <div class="body">
+          <p class="title">Map of Butha Industry Distribution in Manchuria</p>
+          <p class="meta">청대 만주의 부트하 산업 분포도</p>
+          <div class="btns">
+            <a class="btn primary" href="https://mucenfere.github.io/butha_resources/">Open Map</a>
+            <a class="btn" href="https://github.com/mucenfere/butha_resources">Repo</a>
+           </div>
+         </div>
+      </article>
+
 
     </section>
   </main>
