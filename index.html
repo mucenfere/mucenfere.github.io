@@ -12,7 +12,13 @@
     .desc{ color:#444; line-height:1.5; }
     .grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:14px; padding:16px; }
     .card{ border:1px solid #ddd; border-radius:12px; overflow:hidden; background:#fff; }
-    .thumb{ height:140px; background:#f3f3f3; display:flex; align-items:center; justify-content:center; color:#777; }
+    .thumb{
+      height:160px;
+      background:#f3f3f3;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     .card .body{ padding:12px; }
     .title{ font-weight:800; margin:0 0 6px; }
     .meta{ margin:0 0 10px; color:#555; font-size:13px; line-height:1.4; }
@@ -35,7 +41,7 @@
   <main class="wrap">
     <section class="grid">
       <article class="card">
-        <div class="thumb">Thumbnail</div>
+        <div class="thumb" data-thumb="./img/mukden_karun_thumb.jpg"></div>
         <div class="body">
           <p class="title">Mukden's Karun map</p>
           <p class="meta">성경장군 관할의 카룬 분포 지도(강희-가경)</p>
@@ -52,6 +58,14 @@
   <footer>
     <div class="wrap">© mucenfere</div>
   </footer>
+<script>
+  document.querySelectorAll('.thumb[data-thumb]').forEach(el => {
+    const url = el.getAttribute('data-thumb');
+    if (!url) return;
+    el.style.backgroundImage = `url("${url}")`;
+  });
+</script>
+
 </body>
 </html>
 
