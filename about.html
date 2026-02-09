@@ -1,11 +1,64 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8" />
+<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us</title>
-</head>
+  <style>
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    header{ padding:24px 16px; border-bottom:1px solid #eee; }
+    .wrap{ max-width: 980px; margin: 0 auto; }
+    h1{ margin:0 0 8px; }
+    .desc{ color:#444; line-height:1.5; }
+    .grid{
+      display:grid;
+      grid-template-columns: 450px 450px;
+      gap:14px;
+      padding:16px;
+      justify-content: center;
+    }
+    .title{ font-weight:800; margin:0 0 6px; }
+    .meta{ margin:0 0 10px; color:#555; font-size:13px; line-height:1.4; }
+    .btns{ margin-top:auto; display:flex; gap:8px; flex-wrap:wrap; }
+    a.btn{ display:inline-block; padding:8px 10px; border-radius:10px; border:1px solid #bbb; text-decoration:none; color:#111; font-weight:600; font-size:13px; }
+    a.btn.primary{ background:#111; color:#fff; border-color:#111; }
+    footer{ padding:18px 16px; color:#666; font-size:12px; border-top:1px solid #eee; }
+    .tabs{
+      display:flex;
+      gap:48px;
+      padding: 10px 16px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .tab{
+      display:inline-block;
+      border: none; 
+      background: transparent;
+      padding: 0; 
+      border-radius: 0;
+
+      color:#111;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 24px;
+     }
+
+     .tab:hover{
+     text-decoration: underline;
+     }
+
+     main.wrap{
+      border-top:1px solid #eee;
+     }
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: 450px; }
+    }
+    @media (max-width: 480px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+  </style>
 <body>
+    
     <header>
     <div class="wrap">
       <h1>Historical GIS Map Collection: Qing-Era Manchuria</h1>
