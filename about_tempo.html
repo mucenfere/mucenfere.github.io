@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+
+  <style>
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    header{ padding:24px 16px; border-bottom:1px solid #eee; }
+    .wrap{ max-width: 980px; margin: 0 auto; }
+    h1{ margin:0 0 8px; }
+    .desc{ color:#444; line-height:1.5; }
+
+    .tabs{
+      display:flex;
+      gap:48px;
+      padding: 10px 16px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .tab{
+      display:inline-block;
+      border:none;
+      background:transparent;
+      padding:0;
+      border-radius:0;
+      color:#111;
+      text-decoration:none;
+      font-weight:800;
+      font-size:24px;
+    }
+    .tab.active{
+  color: #666;
+  font-style: italic;
+  font-weight: 800;
+  pointer-events: none;
+  cursor: default;         
+    }
+    .tab.active:hover{
+      text-decoration: underline;   
+    .tab:hover{ text-decoration: underline; }
+
+    main.wrap{ border-top:1px solid #eee; }
+
+    .content{
+      padding: 16px;
+      line-height: 1.7;
+      color:#222;
+    }
+    .content h2{
+      margin: 0 0 12px;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .people{
+      margin: 0;
+      font-size: 24px;
+      padding-left: 24px;
+    }
+    .people li{
+      margin: 8px 0;
+    }
+
+    footer{ padding:18px 16px; color:#666; font-size:12px; border-top:1px solid #eee; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Historical GIS Map Collection: Qing-Era Manchuria</h1>
+      <p class="desc">
+        역사 GIS를 활용한 청대 만주 지역 주제도의 포털입니다. 각 카드에서 개별 주제도를 열람할 수 있습니다.
+      </p>
+    </div>
+  </header>
+
+<nav class="tabs wrap">
+  <a class="tab" href="./index.html">Home</a>
+  <a class="tab active" href="./about.html">About Us</a>
+  <a class="tab" href="./notice.html">Notice</a>
+</nav>
+  
+  <main class="wrap">
+    <section class="content">
+      <ul class="people">
+        <li>temporarily unavailable</li>
+      </ul>
+
+      <!-- <p>프로젝트 소개 문단...</p> -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© mucenfere</div>
+  </footer>
+</body>
+</html>
