@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Data</title>
+  <title>Notice</title>
 
   <style>
     body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
@@ -30,6 +30,15 @@
       font-weight:800;
       font-size:24px;
     }
+    .tab.active{
+  color: #666;
+  font-style: italic;
+  font-weight: 800;
+  pointer-events: none;
+  cursor: default;         
+    }
+    .tab.active:hover{
+      text-decoration: underline;   
     .tab:hover{ text-decoration: underline; }
 
     main.wrap{ border-top:1px solid #eee; }
@@ -44,6 +53,15 @@
       font-size: 22px;
       font-weight: 900;
     }
+    .people{
+      margin: 0;
+      font-size: 24px;
+      padding-left: 24px;
+    }
+    .people li{
+      margin: 8px 0;
+    }
+
     footer{ padding:18px 16px; color:#666; font-size:12px; border-top:1px solid #eee; }
   </style>
 </head>
@@ -58,16 +76,19 @@
     </div>
   </header>
 
-  <nav class="tabs wrap">
-    <a class="tab" href="./index.html">Home</a>
-    <a class="tab" href="./about.html">About Us</a>
-    <a class="tab" href="./data.html">Data</a>
-    <a class="tab" href="./copyright.html">Copyright</a>
-  </nav>
-
+<nav class="tabs wrap">
+  <a class="tab" href="./index.html">Home</a>
+  <a class="tab active" href="./about.html">About Us</a>
+  <a class="tab" href="./notice.html">Notice</a>
+</nav>
+  
   <main class="wrap">
     <section class="content">
-      <h2>Data</h2>
+      <ul class="people">
+        <li>CO-Editor: LEE, SEUNGSU (PhD Candidate, Peking University, Department of History)</li>
+        <li>CO-Editor: CHOI, DAJEONG (PhD Candidate, Ludwig-Maximilians-Universität München, Institut für Sinologie)</li>
+      </ul>
+
       <!-- <p>프로젝트 소개 문단...</p> -->
     </section>
   </main>
