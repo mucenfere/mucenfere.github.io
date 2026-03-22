@@ -123,6 +123,12 @@
       border-bottom-color: var(--accent);
     }
 
+    .tab.active {
+      color: var(--accent);
+      border-bottom: 3px solid var(--accent);
+      pointer-events: none;
+    }
+
     /* ── MAIN ── */
     main {
       max-width: 1075px;
@@ -303,7 +309,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a class="tab" href="./index.html">Home</a>
+    <a class="tab active" href="./index.html">Home</a>
     <a class="tab" href="./about_tempo.html">About Us</a>
     <a class="tab" href="./notice.html">Notice</a>
   </div>
