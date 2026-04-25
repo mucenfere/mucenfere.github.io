@@ -251,7 +251,7 @@
     }
     a.btn.primary::before { content: "🌏 "; }
 
-    /* Open Map 비활성 — paper와 동일한 톤 */
+    /* Open Map 비활성 */
     a.btn.primary.disabled {
       background: var(--bg);
       color: var(--border);
@@ -260,15 +260,26 @@
       pointer-events: none;
     }
 
-    /* Paper 비활성 */
+    /* Paper 활성 */
     a.btn.paper {
+      background: var(--paper);
+      color: var(--ink-mid);
+      border-color: var(--border);
+    }
+    a.btn.paper:hover {
+      background: var(--border-light);
+      border-color: var(--border);
+    }
+    a.btn.paper::before { content: "📄 "; }
+
+    /* Paper 비활성 */
+    a.btn.paper.disabled {
       background: var(--bg);
       color: var(--border);
       border-color: var(--border-light);
       cursor: default;
       pointer-events: none;
     }
-    a.btn.paper::before { content: "📄 "; }
 
     /* ── FOOTER ── */
     footer {
@@ -326,7 +337,7 @@
         <p class="card-meta">성경장군 관할 카룬 지도</p>
         <div class="btns">
           <a class="btn primary" href="https://mucenfere.github.io/mukden_karun/">Open Map</a>
-          <a class="btn paper" href="#">Paper</a>
+          <a class="btn paper disabled">Paper</a>
         </div>
       </div>
     </article>
@@ -338,7 +349,7 @@
         <p class="card-meta">성경위장 지도</p>
         <div class="btns">
           <a class="btn primary" href="https://mucenfere.github.io/mukden_weichang/">Open Map</a>
-          <a class="btn paper" href="http://dx.doi.org/10.36274/hakrim.2026.57..143">Paper</a>
+          <a class="btn paper" href="http://dx.doi.org/10.36274/hakrim.2026.57..143" target="_blank" rel="noopener">Paper</a>
         </div>
       </div>
     </article>
@@ -350,7 +361,7 @@
         <p class="card-meta">성경장군 관할 행정구역 경계선 변천 지도(비공개)</p>
         <div class="btns">
           <a class="btn primary disabled">Open Map</a>
-          <a class="btn paper">Paper</a>
+          <a class="btn paper disabled">Paper</a>
         </div>
       </div>
     </article>
@@ -362,7 +373,7 @@
         <p class="card-meta">청대 만주의 "부트하" 산업 자원 분포 (비공개)</p>
         <div class="btns">
           <a class="btn primary disabled">Open Map</a>
-          <a class="btn paper">Paper</a>
+          <a class="btn paper disabled">Paper</a>
         </div>
       </div>
     </article>
@@ -374,7 +385,7 @@
         <p class="card-meta">청 황제의 東巡 경로 지도 (비공개)</p>
         <div class="btns">
           <a class="btn primary disabled">Open Map</a>
-          <a class="btn paper">Paper</a>
+          <a class="btn paper disabled">Paper</a>
         </div>
       </div>
     </article>
