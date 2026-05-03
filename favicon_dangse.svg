@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 배경: 베이지/크림 -->
+  <rect width="64" height="64" rx="8" fill="#e8dcc8"/>
+  <!-- 금색 보더 -->
+  <rect width="64" height="64" rx="8" fill="none" stroke="#b8912a" stroke-width="3"/>
+  <!-- 한자 檔 -->
+  <text
+    x="32"
+    y="48"
+    text-anchor="middle"
+    font-family="'Noto Serif SC', 'Noto Serif CJK TC', serif"
+    font-size="40"
+    font-weight="600"
+    fill="#8b2e0f"
+  >檔</text>
+</svg>
