@@ -65,7 +65,18 @@
       max-width: 1210px;
       margin: 0 auto;
       position: relative;
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
     }
+
+    .header-emblem {
+      height: 110px;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .header-text { flex: 1; }
 
     h1 {
       font-family: 'Noto Serif KR', serif;
@@ -227,11 +238,11 @@
       position: absolute;
       bottom: 10px;
       right: 14px;
-      font-size: 0.66rem;
-      color: var(--ink-light);
+      font-size: 0.78rem;
+      color: var(--ink-mid);
       font-family: 'IM Fell English', serif;
       font-style: italic;
-      opacity: 0.75;
+      opacity: 0.95;
       pointer-events: none;
     }
     .card-updated.is-loading { color: var(--border); }
@@ -326,13 +337,16 @@
 
 <header>
   <div class="header-inner">
-    <h1>
-      Historical GIS Map Collection: Qing-Era Manchuria
-      <em>清代滿洲歷史地圖集</em>
-    </h1>
-    <p class="header-desc">
-      청대 만주 역사지도의 포털입니다. 각 카드에서 개별 주제도를 열람할 수 있습니다.
-    </p>
+    <img class="header-emblem" src="./img/nirugan.png" alt="만주문자 엠블럼">
+    <div class="header-text">
+      <h1>
+        Historical GIS Map Collection: Qing-Era Manchuria
+        <em>清代滿洲歷史地圖集</em>
+      </h1>
+      <p class="header-desc">
+        청대 만주 역사지도의 포털입니다. 각 카드에서 개별 주제도를 열람할 수 있습니다.
+      </p>
+    </div>
   </div>
 </header>
 
